@@ -11,7 +11,7 @@ RUN add-apt-repository -y ppa:nginx/stable
 RUN apt-get install -y nginx
 
 # Install Ghost
-RUN cd /ghost && wget https://ghost.org/zip/ghost-0.4.1.zip -O ghost.zip
+RUN cd /ghost && wget https://ghost.org/zip/ghost-0.4.2.zip -O ghost.zip
 RUN cd /ghost && unzip ghost.zip && rm -f ghost.zip
 RUN cd /ghost && npm install --production
 RUN cp /ghost/config.example.js /ghost/config.js
