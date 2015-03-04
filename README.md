@@ -9,7 +9,7 @@ This assumes you have docker already installed.
 Option one:
 
 ```sh
-$ sudo docker pull dluna/ghost
+$ sudo docker pull domluna/ghost
 ```
 
 This pulls the docker build from the docker index
@@ -26,15 +26,15 @@ $ sudo docker build -t="yournamehere" .
 Normal
 
 ```sh
-# dluna/ghost would be whatever else you named it if you build using option two
-$ sudo docker run -d -p 80:80 dluna/ghost 
+# domluna/ghost would be whatever else you named it if you build using option two
+$ sudo docker run -d -p 80:80 domluna/ghost 
 ```
 If you want to save posts and use custom themes, which in all likelihood you will then you need to provide the directory your custom
 directory.
 
 ```sh
-# dluna/ghost would be whatever else you named it if you build using option two
-$ sudo docker run -d -p 80:80 -v your-directory:/ghost-custom dluna/ghost 
+# domluna/ghost would be whatever else you named it if you build using option two
+$ sudo docker run -d -p 80:80 -v your-directory:/ghost-custom domluna/ghost 
 ```
 The directory should have the following structure
 
